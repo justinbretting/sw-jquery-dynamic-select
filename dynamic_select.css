@@ -1,0 +1,95 @@
+ul.fancy_list {
+    list-style: none outside none;
+    margin: 0 !important;
+}
+.fancy_selected_wrap {
+    background: -webkit-linear-gradient(top, #FFF, #DDD, #FFF); /* Safari 5.1, Chrome 10+ */
+    background: -moz-linear-gradient(top, #FFF, #DDD, #FFF); /* Firefox 3.6+ */
+
+    padding: 5px;
+    font-size: 11px;
+    color: #333;
+    cursor: pointer;
+
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.fancy_select.active .fancy_selected_wrap {
+    box-shadow: 3px 3px 3px #333;
+    -moz-box-shadow: 3px 3px 3px #333;
+    -webkit-box-shadow: 3px 3px 3px #333;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+.fancy_arrow {
+    float: right;
+    background: url(section_collapsed.png) no-repeat 0 0;
+    height: 14px;
+    width: 14px;
+}
+.fancy_select {
+    position: relative;
+    width: 230px;
+
+    box-shadow: 0px 0px 2px #333;
+    -moz-box-shadow: 0px 0px 2px #333;
+    -webkit-box-shadow: 0px 0px 2px #333;
+
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.fancy_select.active .fancy_dropdown {
+    display: block;
+    box-shadow: 3px 3px 3px #333;
+    -moz-box-shadow: 3px 3px 3px #333;
+    -webkit-box-shadow: 3px 3px 3px #333;
+}
+.fancy_dropdown {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+    z-index: 1005;
+    background-color: #FFF;
+}
+.fancy_dropdown li {
+    margin: 0;
+    color: #666;
+    font-size: 11px;
+    padding: 5px;
+    border-top: 1px solid #DDD;
+    cursor: pointer;
+}
+.fancy_dropdown li.hover {
+    background-color: #EEE;
+}
+.fancy_select .row-control {
+    display: none;
+    float: right;
+}
+.fancy_select .row-control img {
+    vertical-align: top;
+}
+.fancy_select .hover .row-control {
+    display: block;
+}
+
+.fancy_add_input {
+    margin: 0 !important;
+    width: 175px;
+    padding: 3px;
+    font-size: 10px;
+}
+.fancy_add_button {
+    background-color: #693;
+    padding: 3px 5px;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
