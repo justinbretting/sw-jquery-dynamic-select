@@ -12,7 +12,8 @@ SW.DynamicSelect = (function($) {
             includeDelete (optional): boolean to include delete control in row items
             deleteImg (optional): path to delete img file
             optionSelectCallback (optional): callback when item is selected
-        }
+    	    placeholder (optional): sets the placeholder attribute of the add item input (modern browsers only)
+    	}
     */
     function DynamicSelect( opts ) {
         this.init( opts );
@@ -44,8 +45,8 @@ SW.DynamicSelect = (function($) {
                     "<div class='fancy_dropdown'>" +
                         "<ul class='fancy_list'></ul>" +
                         "<div class='fancy_add_wrap'>" +
-                            "<button id='addEmailButton' class='fancy_add_button'>Add</button>" +
-                            "<input type='text' placeholder='" + ( opts.placeholder || '' ) + "' id='addEmail' class='fancy_add_input' />" +
+                            "<button class='fancy_add_button'>Add</button>" +
+                            "<input type='text' placeholder='" + ( opts.placeholder || '' ) + "' class='fancy_add_input' />" +
                         "</div>" +
                     "</div>" +
                 "</div>");

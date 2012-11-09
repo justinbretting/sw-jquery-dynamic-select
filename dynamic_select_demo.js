@@ -43,10 +43,10 @@ jQuery(function( $ ) {
     }
 
     /*
-     * id: the id of the input used to create the DynamicSelect
+     * val: the new value of the DynamicSelect object
      * ds: reference to DynamicSelect object
      */
-    function dynamicSelectChanged( id, ds ) {
+    function dynamicSelectChanged( val, ds ) {
         // update the corresponding element with the selected value
         $('#' + ds.id + '_display').text( ds.selectedText() );
     }
